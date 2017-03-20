@@ -1,5 +1,5 @@
 {
-  "name": "abhinandan",
+  "name": "jshint-tabular-report",
   "version": "1.0.0",
   "description": "code quality reporting tool",
   "main": "index.js",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/abhinandangithub/jshint-tabular-report/issues"
   },
-  "homepage": "https://github.com/abhinandangithub/jshint-tabular-report#readme"
+  "homepage": "https://github.com/abhinandangithub/jshint-tabular-report#readme",
+  "keywords": [
+    "js",
+    "code",
+    "quality"
+  ]
 }
