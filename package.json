@@ -1,7 +1,7 @@
 {
   "name": "jshint-tabular-report",
-  "version": "1.0.0",
-  "description": "code quality reporting tool",
+  "version": "1.0.1",
+  "description": "javascript code quality reporting tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/abhinandangithub/jshint-tabular-report.git"
   },
-  "author": "abhinandan",
+  "author": "Abhinandan GP",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abhinandangithub/jshint-tabular-report/issues"
