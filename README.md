@@ -2,13 +2,6 @@
 jshint-tabular-report
 *********************
 
-=============================
-## Author
-
-Abhinandan GP
-abhinandangp.pes29@gmail.com
-==============================
-
 Simple generator of tabular HTML report for JSHint results.
 
 ## Installation
@@ -54,3 +47,7 @@ grunt.registerTask('default', ['jshint']);
 * [jshint-tabular-report on npmjs](https://www.npmjs.com/package/jshint-tabular-report)
 * [jshint-tabular-report on github](https://github.com/abhinandangithub/jshint-tabular-report)
 								   
+## Author
+
+Abhinandan GP
+abhinandangp.pes29@gmail.com
