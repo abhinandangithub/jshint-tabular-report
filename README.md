@@ -17,12 +17,12 @@ Use it with:
 
 bash
 # standard output
-$: jshint --tabular-report node_modules/jshint-tabular-report/tabular-report.js file.js
-$: jshint --tabular-report node_modules/jshint-tabular-report/tabular-report.js controllers/*.js
+$: jshint reporter node_modules/jshint-tabular-report/tabular-report.js file.js
+$: jshint reporter node_modules/jshint-tabular-report/tabular-report.js controllers/*.js
 
 # redirect output to HTML file
-$: jshint --tabular-report node_modules/jshint-tabular-report/tabular-report.js file.js > report.html
-$: jshint --tabular-report node_modules/jshint-tabular-report/tabular-report.js controllers/*.js > report.html
+$: jshint reporter node_modules/jshint-tabular-report/tabular-report.js file.js > report.html
+$: jshint reporter node_modules/jshint-tabular-report/tabular-report.js controllers/*.js > report.html
 ```
 
 #### [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)

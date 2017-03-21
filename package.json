@@ -1,6 +1,6 @@
 {
   "name": "jshint-tabular-report",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "javascript code quality reporting tool",
   "main": "index.js",
   "scripts": {
