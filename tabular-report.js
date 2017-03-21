@@ -21,20 +21,7 @@ module.exports = {
 
         function init() {
             loadTemplates();
-            calculateNumberOfFailures();
             process.stdout.write(renderView());
-        }
-
-        function calculateNumberOfFailures() {
-            numberOfFailures.failures = result.length;
-
-            result.forEach(function (element) {
-                if (isError(element.error.code)) {
-                    numberOfFailures.errors += 1;
-                } else {
-                    numberOfFailures.warnings += 1;
-                }
-            });
         }
 
         function isError(errorCode) {
@@ -87,10 +74,11 @@ module.exports = {
             var errors = 0;
             var warnings = 0;
 
+            numberOfFailures.failures = result.length;
+
             result.forEach(function (element) {
                 var file = element.file;
                 var error = element.error;
-
                 
                 if (oldFile !== file) {
                     if(oldFile != ''){
@@ -106,8 +94,10 @@ module.exports = {
 
                 if (isError(element.error.code)) {
                     errors += 1;
+                    numberOfFailures.errors += 1;
                 } else {
                     warnings += 1;
+                    numberOfFailures.warnings += 1;
                 }
 
                 content += templates.item
