@@ -10,7 +10,8 @@ module.exports = {
             item: '',
             itemHeader: '',
             noItems: '',
-            summary: ''
+            summary: '',
+            file:''
         };
 
         var numberOfFailures = {
@@ -81,6 +82,7 @@ module.exports = {
                 var error = element.error;
                 
                 if (oldFile !== file) {
+                    
                     if(oldFile != ''){
                         content += templates.itemHeader
                         .replace('{file}', escapeHtml(oldFile))
@@ -90,6 +92,9 @@ module.exports = {
                     oldFile = file;
                     errors = 0;
                     warnings = 0;
+
+                    content += templates.file
+                        .replace('{fileName}', escapeHtml(file));
                 }
 
                 if (isError(element.error.code)) {
